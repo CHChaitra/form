@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORM EXAMPLE</title>
+	<style type="text/css">
+		.abc{
+			background-color:skyblue;
+			padding-top: 6px;
+			padding-bottom: 5px;
+			border: solid;
+			border-color: black;
+			border-radius: 100px;
+		}
+	</style>
+</head>
+<body style="background-color:white;">
+	<center>
+	<u><h3 style="color:blue;">Enter Your Information</h3></u>
+	<div class="abc">
+<form action="action.php" method="get">
+	<label>First Name</label>
+<input type="text" name="fname"placeholder="Enter your name" required="fname"><br><br><!-- placeholder,required,value,size,readonly,maxlength, pattern[A-Za-z]{3},autofocus>-->
+<label>Last Name</label>
+<input type="text" name="Lname"><br><br>
+<label>Date Of Birth</label>
+<input type="Date" name="dod"><br><br>
+
+<label>Departments</label>
+	<input list="dept">
+	<datalist id="dept">
+		<option value="CSE">
+		<option value="ECE">
+		<option value="CIVIL">
+		<option value="ME">	
+	</datalist>	
+<br>
+<br>
+<input type="radio" name="agree" value="yes">Yes
+<input type="radio" name="agree" value="no">No
+<br>
+<label>Choose Language</label><br>
+<input type="checkbox" name="C" value="yes">C
+<br>
+<input type="checkbox" name="C++" value="Yes">C++<br>
+<input type="checkbox" name="Java" value="Yes">Java<br>
+<input type="checkbox" name="python" value="yes">python<br>
+<input type="search" name="email" placeholder="SEARCH"><br><br>
+<input type="range" name="" min="0" max="25">
+<input type="submit" value="Submit">
+<input type="reset" value="Clear">
+
+</div>
+</form>
+</center>
+</body>
+</html>
